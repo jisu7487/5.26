@@ -3,10 +3,10 @@
     <section class="hero is-primary">
       <div class="hero-body">
         <p class="title">
-          <i class="fas fa-utensils"></i>음식칼로리 정보
+          <i class="fas fa-utensils"></i>음식 정보
         </p>
         <p class="subtitle">
-          한식종류와 칼로리 정보 2
+          한식종류와 칼로리 정보
         </p>
       </div>
     </section>
