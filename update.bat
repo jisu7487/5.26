@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add bulma.html s "
+git commit -m "default.vue"
 git push -u origin master
