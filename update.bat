@@ -1,3 +1,3 @@
 git add --all
-git commit -m "default.vue"
+git commit -m "finish"
 git push -u origin master
