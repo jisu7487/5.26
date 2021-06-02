@@ -3,6 +3,9 @@
     <nav class="breadcrumb">
       <ul>
         <li><nuxt-link to="/"><i class="fas fa-home"></i> 홈으로</nuxt-link></li>
+      <li>
+      <nuxt-link to="/restaurant"><i class="fas fa-file-signature"></i>&nbsp;맛집 list</nuxt-link>
+      </li>
       </ul>
     </nav>
     <nuxt/>
