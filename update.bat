@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add table name"
+git commit -m "update bulgogi"
 git push -u origin master

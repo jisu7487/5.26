@@ -81,19 +81,19 @@
             <tbody>
               <tr>
                 <td>계</td>
-                <td>동물계<small>(Animalia)</small></td>
-              </tr>
-              <tr>
-                <td>문</td>
-                <td>척삭동물문<small>(Chordata)</small></td>
-              </tr>
-              <tr>
-                <td>강</td>
-                <td>포유강<small>(Mammalia)</small></td>
+                <td>고기<small>(meat)</small></td>
               </tr>
               <tr class="is-selected">
-                <td>종</td>
-                <td>집고양이<small>(F. catus)</small></td>
+                <td>열량</td>
+                <td>600kcal<small>(Calorie)</small></td>
+              </tr>
+              <tr>
+                <td>조리시간</td>
+                <td>25분<small>(Time)</small></td>
+              </tr>
+              <tr >
+                <td>탄수화물</td>
+                <td>60g<small>(Carbohydrate)</small></td>
               </tr>
             </tbody>
           </table>
