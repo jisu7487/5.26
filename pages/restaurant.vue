@@ -20,6 +20,7 @@
               <th>번호</th>
               <th>가게이름</th>
               <th>대표메뉴</th>
+              <th>가게위치</th>
             </tr>
           </thead>
           <tbody>
@@ -28,6 +29,7 @@
                 <td>{{ pos }}</td>
                 <td>{{ tableResName[pos - 1] }}</td>
                 <td>{{ tableResMenu[pos - 1] }}</td>
+                <td>{{ tableResLocation[pos - 1] }}</td>
               </tr>
             </template>
           </tbody>
@@ -46,13 +48,13 @@
 <script>
 import ResName from "~/assets/ResName.json";
 import ResMenu from "~/assets/ResMenu.json";
-import catNames from "~/assets/catNames.json";
+import ResLocation from "~/assets/ResLocation.json";
 export default {
   data() {
     return {
       tableResName: ResName.names,
       tableResMenu: ResMenu.names,
-      tableCatNames: catNames.names
+      tableResLocation: ResLocation.names
     };
   }
 };

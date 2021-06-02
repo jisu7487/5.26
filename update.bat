@@ -1,3 +1,3 @@
 git add --all
-git commit -m "update menu list"
+git commit -m "add Location"
 git push -u origin master
