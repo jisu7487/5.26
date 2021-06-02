@@ -18,8 +18,9 @@
           <thead>
             <tr>
               <th>번호</th>
-              <th>수컷 강아지 이름</th>
-              <th>암컷 강아지 이름</th>
+              <th>가게이름</th>
+              <th>가게주소</th>
+              <th>대표메뉴</th>
             </tr>
           </thead>
           <tbody>
@@ -28,6 +29,7 @@
                 <td>{{ pos }}</td>
                 <td>{{ tableDogMaleNames[pos - 1] }}</td>
                 <td>{{ tableDogFemaleNames[pos - 1] }}</td>
+                 <td>{{ tableMenu[pos - 1] }}</td>
               </tr>
             </template>
           </tbody>
