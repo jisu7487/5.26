@@ -4,7 +4,7 @@
       <div class="hero-body">
         <p class="title">
           <i class="fas fa-utensils"></i> 우리동네
-          <i class="fas fa-utensils"></i> 음식맛집
+          <i class="fas fa-utensils"></i> 맛집정보
         </p>
         <p class="subtile">
           맛집 list
@@ -19,7 +19,6 @@
             <tr>
               <th>번호</th>
               <th>가게이름</th>
-              <th>가게주소</th>
               <th>대표메뉴</th>
             </tr>
           </thead>
@@ -27,9 +26,8 @@
             <template v-for="pos in tableDogMaleNames.length">
               <tr :key="pos">
                 <td>{{ pos }}</td>
-                <td>{{ tableDogMaleNames[pos - 1] }}</td>
-                <td>{{ tableDogFemaleNames[pos - 1] }}</td>
-                 <td>{{ tableMenu[pos - 1] }}</td>
+                <td>{{ tableResmenu[pos - 1] }}</td>
+                <td>{{ tableResName[pos - 1] }}</td>
               </tr>
             </template>
           </tbody>
@@ -69,17 +67,15 @@
   </div>
 </template>
 <script>
-import dogMaleNames from "~/assets/dogMaleNames.json";
-import dogFemaleNames from "~/assets/dogFemaleNames.json";
-import menu from "~/assets/menu.json";
+import ResMenu from "~/assets/dogMaleNames.json";
+import ResName from "~/assets/ResName.json";
 import catNames from "~/assets/catNames.json";
 export default {
   data() {
     return {
-      tableDogMaleNames: dogMaleNames.names,
-      tableDogFemaleNames: dogFemaleNames.names,
-      tableCatNames: catNames.names,
-      tableMenu: menu.menu
+      tableResMenu: ResMenu.names,
+      tableResName: ResName.names,
+      tableCatNames: catNames.names
     };
   }
 };
