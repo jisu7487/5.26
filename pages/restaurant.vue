@@ -26,8 +26,8 @@
             <template v-for="pos in tableResMenu.length">
               <tr :key="pos">
                 <td>{{ pos }}</td>
-                <td>{{ tableResMenu[pos - 1] }}</td>
                 <td>{{ tableResName[pos - 1] }}</td>
+                <td>{{ tableResMenu[pos - 1] }}</td>
               </tr>
             </template>
           </tbody>
@@ -38,30 +38,7 @@
             >sindresorhus/dog-names</a
           >
         </div>
-      </div>
-      <div class="column">
-        <table class="table is-striped is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th>번호</th>
-              <th>고양이 이름</th>
-            </tr>
-          </thead>
-          <tbody>
-            <template v-for="pos in tableCatNames.length">
-              <tr :key="pos">
-                <td>{{ pos }}</td>
-                <td>{{ tableCatNames[pos - 1] }}</td>
-              </tr>
-            </template>
-          </tbody>
-        </table>
-        <div class="content">
-            <span class="tag is-danger">출처</span>
-            <a href="https://github.com/sindresorhus/cat-names"
-              >sindresorhus/cat-names</a
-            >
-          </div>
+      
       </div>
     </section>
   </div>
