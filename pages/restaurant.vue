@@ -23,10 +23,10 @@
             </tr>
           </thead>
           <tbody>
-            <template v-for="pos in tableDogMaleNames.length">
+            <template v-for="pos in tableResMenu.length">
               <tr :key="pos">
                 <td>{{ pos }}</td>
-                <td>{{ tableResmenu[pos - 1] }}</td>
+                <td>{{ tableResMenu[pos - 1] }}</td>
                 <td>{{ tableResName[pos - 1] }}</td>
               </tr>
             </template>
@@ -67,7 +67,7 @@
   </div>
 </template>
 <script>
-import ResMenu from "~/assets/dogMaleNames.json";
+import ResMenu from "~/assets/ResMenu.json";
 import ResName from "~/assets/ResName.json";
 import catNames from "~/assets/catNames.json";
 export default {
