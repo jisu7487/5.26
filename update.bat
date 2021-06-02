@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add tableeeee"
-git push -u origin main
+git commit -m "add tableeeeee"
+git push -u origin master
