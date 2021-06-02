@@ -71,13 +71,15 @@
 <script>
 import dogMaleNames from "~/assets/dogMaleNames.json";
 import dogFemaleNames from "~/assets/dogFemaleNames.json";
+import menu from "~/assets/menu.json";
 import catNames from "~/assets/catNames.json";
 export default {
   data() {
     return {
       tableDogMaleNames: dogMaleNames.names,
       tableDogFemaleNames: dogFemaleNames.names,
-      tableCatNames: catNames.names
+      tableCatNames: catNames.names,
+      tableMenu: menu.menu
     };
   }
 };
