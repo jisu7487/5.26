@@ -34,8 +34,8 @@
         </table>
         <div class="content">
           <span class="tag is-danger">출처</span>
-          <a href="https://github.com/sindresorhus/dog-names"
-            >sindresorhus/dog-names</a
+          <a href="http://www.kimbab1009.com/"
+            >김밥천국</a
           >
         </div>
       
@@ -44,14 +44,14 @@
   </div>
 </template>
 <script>
-import ResMenu from "~/assets/ResMenu.json";
 import ResName from "~/assets/ResName.json";
+import ResMenu from "~/assets/ResMenu.json";
 import catNames from "~/assets/catNames.json";
 export default {
   data() {
     return {
-      tableResMenu: ResMenu.names,
       tableResName: ResName.names,
+      tableResMenu: ResMenu.names,
       tableCatNames: catNames.names
     };
   }
