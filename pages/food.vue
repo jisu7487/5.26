@@ -46,10 +46,10 @@
 			</table>
 			<div class="content">
 				<p class="tag is-danger">출처</p>
-				<a href="https://www.myfitnesspal.com/ko/food/calories/api-1339223644">Dog CEO</a><br />
+				<a href="https://dog.ceo/dog-api/documentation/">Dog CEO</a><br />
 				<a
 					class="button is-primary is-small"
-					href="https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json"
+					href="https://dog.ceo/api/breeds/list/all"
 					>List all breeds</a
 				>
 			</div>
@@ -61,7 +61,7 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const food = await axios.get('https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json');
+			const food = await axios.get('https://dog.ceo/api/breeds/list/all');
 			//alert(Object.keys(food));
 			return {
 				tablefood: food.data.message,
