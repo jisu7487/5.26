@@ -2,7 +2,7 @@
 	<div>
 		<section class="hero is-warning">
 			<div class="hero-body">
-				<p class="title"><i class="fas fa-dog"></i>  맛집 추천</p>
+				<p class="title"><i class="fas fa-utensils"></i>  맛집 추천</p>
 				<p class="subtile">
 					다양한 맛집을 평가해 드림
 				</p>
