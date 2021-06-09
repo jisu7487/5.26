@@ -23,7 +23,7 @@
         </tr>
       </thead>
       <tbody>
-        <template v-for="pos in tablefood.length">
+        <template v-for="pos in tablefoodKeys.length">
           <tr :key="pos">
             <td>{{ pos }}</td>
             <td>{{ tablefood[pos - 1].food }}</td>
