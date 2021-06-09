@@ -17,38 +17,13 @@
 					<th>이름</th>
 					<th>평가</th>
 				</thead>
-				<tbody>
-					<template v-for="pos in tablefoodKeys.length">
-						<tr :key="pos">
-							<td>{{ pos }}</td>
-							<td>{{ tablefoodKeys[pos - 1] }}</td>
-							<td>
-								<span
-									class="tag is-black"
-									v-if="
-										((ar = tablefoodBreeds[tablefoodKeys[pos - 1]]),
-										ar.length == 0)
-									"
-									>없음</span
-								>
-								<span v-else
-									><template v-for="subbreed in ar"
-										><span class="tag is-success" :key="subbreed">{{
-											subbreed
-										}}</span
-										>&nbsp;</template
-									>
-								</span>
-							</td>
-						</tr>
-					</template>
-				</tbody>
+
 			</table>
 			<div class="content">
 				<a
 					class="button is-primary is-small"
 					href="https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json"
-					>List all breeds</a
+					>List all foodList</a
 				>
 			</div>
 		</div>
@@ -59,11 +34,11 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const foodBreeds = await axios.get('https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json');
-			//alert(Object.keys(foodBreeds));
+			const foodList = await axios.get('https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json');
+			//alert(Object.keys(foodList));
 			return {
-				tablefoodBreeds: foodBreeds.data.message,
-				tablefoodKeys: Object.keys(foodBreeds.data.message),
+				tablefoodList: foodList.data.message,
+				tablefoodKeys: Object.keys(foodList.data.message),
 			};
 		},
 	};
