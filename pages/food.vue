@@ -2,9 +2,9 @@
 	<div>
 		<section class="hero is-warning">
 			<div class="hero-body">
-				<p class="title"><i class="fas fa-dog"></i>맛집을 추천해드립니다</p>
+				<p class="title"><i class="fas fa-dog"></i>대전의 맛집 정보</p>
 				<p class="subtile">
-					애완동물의 상태를 간단하게 체크해봅시다.
+					맛집을 평가해줍니다
 				</p>
 			</div>
 		</section>
@@ -13,16 +13,16 @@
 		<div class="column">
 			<table class="table">
 				<thead>
-					<th>간단한 진단 내역</th>
-					<th>애완동물</th>
-                    <th>패턴 변화</th>
+					<th>이름</th>
+					<th>평가</th>
+                    <th>tag</th>
 				</thead>
 				<tbody>
-					<template v-for="pos in tableStatusKey.length">
+					<template v-for="pos in tablefoodKey.length">
 						<tr :key="pos">
-							<td>{{ tableStatus[pos - 1]}}</td>
-                            <td>{{ tableStatus2[pos - 1]}}</td>
-                            <td>{{ tableStatus3[pos - 1]}}</td>						
+							<td>{{ tableName[pos - 1]}}</td>
+                            <td>{{ tableContent[pos - 1]}}</td>
+                            <td>{{ tableTag[pos - 1]}}</td>						
 						</tr>
 					</template>
 				</tbody>
@@ -41,12 +41,12 @@
 		async asyncData() {
 			const petStat = await axios.get('https://raw.githubusercontent.com/jisu7487/5.26/master/food.json');
             //alert(Object.keys(petStat));
-            console.log(Object.keys(petStat.data.message));
+            console.log(Object.keys(food.data.message));
 			return {
-				tableStatus: petStat.data.message,
-                tableStatusKey: Object.keys(petStat.data.message),
-                tableStatus2: petStat.data.status,
-                tableStatus3: petStat.data.status2
+				tableName: food.data.message,
+                tableStatusKey: Object.keys(food.data.message),
+                tableContent: food.data.content,
+                tableTag: food.data.tag
                 
                 
 			};
