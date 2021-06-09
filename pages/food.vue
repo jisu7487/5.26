@@ -22,7 +22,7 @@
 			<div class="content">
 				<a
 					class="button is-primary is-small"
-					href="https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json"
+					href="https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json"
 					>List all foodList</a
 				>
 			</div>
@@ -34,11 +34,11 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const foodList = await axios.get('https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json');
+			const foodList = await axios.get('https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json');
 			//alert(Object.keys(foodList));
 			return {
 				tablefoodList: foodList.data.data,
-				tablefoodKeys: Object.keys(foodList.data.data),
+				
 			};
 		},
 	};
