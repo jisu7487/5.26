@@ -47,7 +47,7 @@
 			<div class="content">
 				<a
 					class="button is-primary is-small"
-					href="https://dog.ceo/api/breeds/list/all"
+					href="https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json"
 					>List all breeds</a
 				>
 			</div>
@@ -59,7 +59,7 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const foodBreeds = await axios.get('https://dog.ceo/api/breeds/list/all');
+			const foodBreeds = await axios.get('https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json');
 			//alert(Object.keys(foodBreeds));
 			return {
 				tablefoodBreeds: foodBreeds.data.message,
