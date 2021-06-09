@@ -2,9 +2,9 @@
 	<div>
 		<section class="hero is-warning">
 			<div class="hero-body">
-				<p class="title"><i class="fas fa-utensils"></i>  맛집 추천</p>
+				<p class="title"><i class="fas fa-dog"></i>맛집을 추천해드립니다</p>
 				<p class="subtile">
-					다양한 맛집을 평가해 드림
+					애완동물의 상태를 간단하게 체크해봅시다.
 				</p>
 			</div>
 		</section>
@@ -13,24 +13,23 @@
 		<div class="column">
 			<table class="table">
 				<thead>
-					<th>번호</th>
-					<th>이름</th>
-					<th>평가</th>
+					<th>간단한 진단 내역</th>
+					<th>애완동물</th>
+                    <th>패턴 변화</th>
 				</thead>
-                <tbody>
-					<template v-for="pos in tablefoodList.length">
+				<tbody>
+					<template v-for="pos in tableStatusKey.length">
 						<tr :key="pos">
-							<td>{{ tablefoodList[pos - 1]}}</td>					
+							<td>{{ tableStatus[pos - 1]}}</td>
+                            <td>{{ tableStatus2[pos - 1]}}</td>
+                            <td>{{ tableStatus3[pos - 1]}}</td>						
 						</tr>
 					</template>
 				</tbody>
 			</table>
-			<div class="content">
-				<a
-					class="button is-primary is-small"
-					href="https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json"
-					>List all foodList</a
-				>
+            <div class="content">
+				<p class="tag is-danger">출처</p>
+				<a href="https://github.com/jisu7487/5.26">MY GIT</a><br />
 			</div>
 		</div>
 		<div class="column"></div>
@@ -40,13 +39,17 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const foodList = await axios.get('https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json');
-			//alert(Object.keys(foodList));
+			const petStat = await axios.get('https://raw.githubusercontent.com/jisu7487/5.26/master/food.json');
+            //alert(Object.keys(petStat));
+            console.log(Object.keys(petStat.data.message));
 			return {
-				tablefoodList: foodList.data
-
-				
+				tableStatus: petStat.data.message,
+                tableStatusKey: Object.keys(petStat.data.message),
+                tableStatus2: petStat.data.status,
+                tableStatus3: petStat.data.status2
+                
+                
 			};
-		},
+		}
 	};
 </script>
