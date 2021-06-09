@@ -39,12 +39,12 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const petStat = await axios.get('https://raw.githubusercontent.com/jisu7487/5.26/master/food.json');
-            //alert(Object.keys(petStat));
+			const food = await axios.get('https://raw.githubusercontent.com/jisu7487/5.26/master/food.json');
+            //alert(Object.keys(food));
             console.log(Object.keys(food.data.message));
 			return {
 				tableName: food.data.message,
-                tableStatusKey: Object.keys(food.data.message),
+                tablefoodKey: Object.keys(food.data.message),
                 tableContent: food.data.content,
                 tableTag: food.data.tag
                 
