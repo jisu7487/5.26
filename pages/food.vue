@@ -2,9 +2,9 @@
 	<div>
 		<section class="hero is-warning">
 			<div class="hero-body">
-				<p class="title"><i class="fas fa-dog"></i> 강아지 품종</p>
+				<p class="title"><i class="fas fa-dog"></i>  맛집 추천</p>
 				<p class="subtile">
-					다양한 강아지 품종을 함께 공부합시다.
+					다양한 맛집을 평가해 드림
 				</p>
 			</div>
 		</section>
@@ -14,8 +14,8 @@
 			<table class="table">
 				<thead>
 					<th>번호</th>
-					<th>강아지 품종</th>
-					<th>강아지 아품종</th>
+					<th>이름</th>
+					<th>평가</th>
 				</thead>
 				<tbody>
 					<template v-for="pos in tablefoodKeys.length">
