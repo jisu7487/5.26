@@ -17,12 +17,18 @@
 					<th>이름</th>
 					<th>평가</th>
 				</thead>
-
+                <tbody>
+					<template v-for="pos in tablefoodList.length">
+						<tr :key="pos">
+							<td>{{ tablefoodList[pos - 1]}}</td>					
+						</tr>
+					</template>
+				</tbody>
 			</table>
 			<div class="content">
 				<a
 					class="button is-primary is-small"
-					href="https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json"
+					href="https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json"
 					>List all foodList</a
 				>
 			</div>
@@ -37,7 +43,8 @@
 			const foodList = await axios.get('https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json');
 			//alert(Object.keys(foodList));
 			return {
-				tablefoodList: foodList.data.data,
+				tablefoodList: foodList.data
+
 				
 			};
 		},
