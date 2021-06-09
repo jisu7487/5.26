@@ -3,11 +3,10 @@
     <section class="hero is-link">
       <div class="hero-body">
         <p class="title">
-          <i class="fas fa-glass-martini-alt" /> 악기의
-          <i class="fas fa-glass-cheers" /> 모든것 2
+          <i class="fas fa-glass-martini-alt" /> 맛집 리스트
         </p>
         <p class="subtitle">
-          악기를 골라주세요
+         맛집을 평가해드립니다
         </p>
       </div>
     </section>
