@@ -2,7 +2,8 @@
 	<div>
 		<section class="hero is-warning">
 			<div class="hero-body">
-				<p class="title"><i class="fas fa-dog"></i>대전의 맛집 정보</p>
+				<p class="title"><i class="ffas fa-utensils">
+                    </i>대전의 맛집 정보</p>
 				<p class="subtile">
 					맛집을 평가해줍니다
 				</p>
@@ -29,7 +30,7 @@
 			</table>
             <div class="content">
 				<p class="tag is-danger">출처</p>
-				<a href="https://github.com/jisu7487/5.26">MY GIT</a><br />
+				<a href="https://github.com/jisu7487/5.26">MY GIT HUB</a><br />
 			</div>
 		</div>
 		<div class="column"></div>
