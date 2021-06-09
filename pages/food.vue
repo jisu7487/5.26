@@ -3,10 +3,11 @@
     <section class="hero is-link">
       <div class="hero-body">
         <p class="title">
-          <i class="fas fa-glass-martini-alt" /> 지역별 맛집
+          <i class="fas fa-glass-martini-alt" /> 악기의
+          <i class="fas fa-glass-cheers" /> 모든것 2
         </p>
         <p class="subtitle">
-          맛집을 추천해 드립니다
+          악기를 골라주세요
         </p>
       </div>
     </section>
@@ -18,15 +19,14 @@
       <thead>
         <tr>
           <th>번호</th>
-          <th>종류</th>
-          <th>맛집</th>
+          <th>이름</th>
+          <th>content</th>
         </tr>
       </thead>
       <tbody>
         <template v-for="pos in tablefood.length">
           <tr :key="pos">
             <td>{{ pos }}</td>
-            <td>{{ tablefood[pos - 1].family }}</td>
             <td>{{ tablefood[pos - 1].food }}</td>
           </tr>
         </template>
@@ -40,11 +40,11 @@
 import axios from 'axios'
 export default {
   async asyncData () {
-    const foodd = await axios.get('https://www.daegufood.go.kr/kor/xml/tastyfood.html?f_taste=1')
-    alert(Object.keys(foodd.data[0]))
+    const foodlist = await axios.get('https://raw.githubusercontent.com/swmaestro/somat/gh-pages/somalife.json')
+    alert(Object.keys(foodlist.data[0]))
     return {
-      tablefood: foodd.data,
-      tablefoodkey: Object.keys(foodd.data[0]
+      tablefood: foodlist.data,
+      tablefoodkey: Object.keys(foodlist.data[0]
       )
     }
   }
