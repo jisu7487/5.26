@@ -46,10 +46,10 @@
 			</table>
 			<div class="content">
 				<p class="tag is-danger">출처</p>
-				<a href="http://data.jeonnam.go.kr/rest/namdofood/getNdfoodList">Dog CEO</a><br />
+				<a href="https://www.daegufood.go.kr/kor/xml/tastyfood.html?f_taste=1">Dog CEO</a><br />
 				<a
 					class="button is-primary is-small"
-					href="https://www.data.go.kr/catalog/15059097/openapi.json"
+					href="https://www.daegufood.go.kr/kor/xml/tastyfood.html?f_taste=1"
 					>List all breeds</a
 				>
 			</div>
@@ -61,7 +61,7 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const food = await axios.get('https://www.data.go.kr/catalog/15059097/openapi.json');
+			const food = await axios.get('https://www.daegufood.go.kr/kor/xml/tastyfood.html?f_taste=1');
 			//alert(Object.keys(food));
 			return {
 				tablefood: food.data.message,
