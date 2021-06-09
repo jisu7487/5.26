@@ -20,8 +20,8 @@
             <figure class="image is-128x128">
               <img
                 src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/220px-Dolsot-bibimbap.jpg
-                alt=""
-              />
+                alt=
+                />
             </figure>
             밥에 각종 나물과 각종 장[2], 그리고 기타 동물성 재료(계란, 고기, 통조림 참치 등)을 넣고 비벼서 만드는 요리다. 장으로 고추장을 가장 많이 사용하지만, 간장을 소스로 사용하는 경우도 있고, 그 쪽이 원래 요리법인 것으로 알려져 있다. 현대에 와서는 매운 것을 잘 먹지 못하는 외국인에게 비빔밥을 만들어 줄 때 간장을 소스로 이용하곤 하는데, 후술할 마이클 잭슨 비빔밥이 한때 유행했으며, 가장 최근에 미디어에 등장한 경우로는 윤식당2에서 간장 비빔밥이 주 메뉴로 등장한 바 있다
           </div>
