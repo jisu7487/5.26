@@ -37,8 +37,8 @@
 			const foodList = await axios.get('https://raw.githubusercontent.com/terrenjpeterson/caloriecounter/master/src/data/foods.json');
 			//alert(Object.keys(foodList));
 			return {
-				tablefoodList: foodList.data.message,
-				tablefoodKeys: Object.keys(foodList.data.message),
+				tablefoodList: foodList.data.data,
+				tablefoodKeys: Object.keys(foodList.data.data),
 			};
 		},
 	};
