@@ -1,9 +1,10 @@
 # mycloud1
 
 > Nuxt.js project
+> 
 https://js1660019.tk/
 
-nifty-einstein-d066ab.netlify.app
+https://nifty-einstein-d066ab.netlify.app
 ## Build Setup
 
 ``` bash
